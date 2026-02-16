@@ -22,7 +22,7 @@ const UserList=()=>{
                 <div>
                      <h1>User List</h1>
             <ul>
-                {user.map((user,index)=><li key={index}><Link to={`user/${user.id}`}>{user.name}</Link></li>)}
+                {user.map((user)=><li key={user.id}><Link to={`/users/${user.id}`}>{user.name}</Link></li>)}
             </ul>
                 </div>
             }
