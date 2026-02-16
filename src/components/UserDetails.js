@@ -19,11 +19,11 @@ const UserDetails=()=>{
             {loading?<div>Loading...</div>:
                 <div>
                      <h1>User Details </h1>
-                     <p><b>Name: </b>{user.name}</p>
-                     <p><b>UserName: </b>{user.username}</p>
-                     <p><b>Email: </b>{user.email}</p>
-                     <p><b>Phone: </b>{user.phone}</p>
-                     <p><b>Website: </b>{user.website}</p>
+                     <p>Name:{user.name}</p>
+                     <p>UserName:{user.username}</p>
+                     <p>Email:{user.email}</p>
+                     <p>Phone:{user.phone}</p>
+                     <p>Website:{user.website}</p>
                 </div>
             }
            
