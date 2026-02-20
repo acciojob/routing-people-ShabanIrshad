@@ -17,20 +17,20 @@ const UserDetails = () => {
       .catch((err) => console.log(err));
   }, [id]);
   console.log(user);
+
+  if (!user) {
+    return <div>Loading...</div>;
+  }
   return (
     <>
-      {loading ? (
-        <div>Loading...</div>
-      ) : (
-        <div>
-          <h1>User Details </h1>
-          <p>Name: {user.name}</p>
-          <p>Username: {user.username}</p>
-          <p>Email: {user.email}</p>
-          <p>Phone: {user.phone}</p>
-          <p>Website: {user.website}</p>
-        </div>
-      )}
+      <div>
+        <h1>User Details </h1>
+        <p>Name: {user.name}</p>
+        <p>Username: {user.username}</p>
+        <p>Email: {user.email}</p>
+        <p>Phone: {user.phone}</p>
+        <p>Website: {user.website}</p>
+      </div>
     </>
   );
 };

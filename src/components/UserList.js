@@ -18,7 +18,7 @@ const UserList=()=>{
     console.log(user);
     return (
         <>
-            {loading?<div><h1>Loading...</h1></div>:
+            {loading?<div>Loading...</div>:
                 <div>
                      <h1>User List</h1>
             <ul>
